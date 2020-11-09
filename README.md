@@ -57,4 +57,4 @@ project. This means that you don't need to do anything to make it work with whic
 
 ## Built by Skyhook
 
-This module is contributed by the team at [Skyhook](https://www.skyhookadventure.com/).
+This module is contributed by the team at [Skyhook](https://www.skyhookadventure.com/)
