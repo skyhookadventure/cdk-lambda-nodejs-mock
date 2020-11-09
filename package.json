@@ -4,6 +4,7 @@
   "license": "MIT",
   "version": "1.0.2",
   "main": "dist/index.js",
+  "repository": "https://github.com/skyhookadventure/cdk-lambda-nodejs-mock.git",
   "scripts": {
     "build": "tsc --resolveJsonModule",
     "watch": "tsc -w --resolveJsonModule",
