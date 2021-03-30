@@ -16,7 +16,7 @@ export class NodejsFunction extends Function {
     // Mock bucket
     const bucket = Bucket.fromBucketArn(
       scope,
-      "mockBucket",
+      `${id}MockBucket`,
       "arn:aws:s3:::cdk-lambda-nodejs-mock-fake-bucket"
     );
 
