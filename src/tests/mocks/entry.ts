@@ -1,5 +1,5 @@
 // A simple dummy function
 // eslint-disable-next-line func-names
-export default function () {
+export default function (): number {
   return 1;
 }

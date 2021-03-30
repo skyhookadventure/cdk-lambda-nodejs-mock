@@ -20,7 +20,8 @@ it("returns a lambda with default code", () => {
   expectCdk(stack).to(
     haveResourceLike("AWS::Lambda::Function", {
       Code: {
-        ZipFile: "return;",
+        S3Bucket: "cdk-lambda-nodejs-mock-fake-bucket",
+        S3Key: "cdk-lambda-nodejs-mock-fake-lambda.ts",
       },
       Handler: "index.handler",
       Runtime: "nodejs12.x",
