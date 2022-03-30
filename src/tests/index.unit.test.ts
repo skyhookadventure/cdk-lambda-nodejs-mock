@@ -1,7 +1,7 @@
 /* eslint-disable max-classes-per-file */
 import { expect as expectCdk, haveResourceLike } from "@aws-cdk/assert";
-import { Runtime } from "@aws-cdk/aws-lambda";
-import { Stack } from "@aws-cdk/core";
+import { Runtime } from "aws-cdk-lib/aws-lambda";
+import { Stack } from "aws-cdk-lib/core";
 import { NodejsFunction } from "..";
 
 class TestStack extends Stack {

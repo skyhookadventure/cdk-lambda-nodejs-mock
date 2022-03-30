@@ -1,9 +1,9 @@
 import { expect as expectCdk, haveResourceLike } from "@aws-cdk/assert";
-import { Stack } from "@aws-cdk/core";
-import { NodejsFunction } from "@aws-cdk/aws-lambda-nodejs";
+import { Stack } from "aws-cdk-lib/core";
+import { NodejsFunction } from "aws-cdk-lib/aws-lambda-nodejs";
 
 // eslint-disable-next-line global-require
-jest.mock("@aws-cdk/aws-lambda-nodejs", () => require(".."));
+jest.mock("aws-cdk-lib/aws-lambda-nodejs", () => require(".."));
 
 class TestStack extends Stack {
   constructor() {

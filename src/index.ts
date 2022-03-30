@@ -1,8 +1,7 @@
-/* eslint-disable import/prefer-default-export */
-import { Function, Runtime, Code } from "@aws-cdk/aws-lambda";
-import { Construct } from "@aws-cdk/core";
-import { NodejsFunctionProps } from "@aws-cdk/aws-lambda-nodejs";
-import { Bucket } from "@aws-cdk/aws-s3";
+import { Function, Runtime, Code } from "aws-cdk-lib/aws-lambda";
+import { Construct } from "constructs";
+import { NodejsFunctionProps } from "aws-cdk-lib/aws-lambda-nodejs";
+import { Bucket } from "aws-cdk-lib/aws-s3";
 
 /**
  * NodejsFunction Mock
@@ -40,4 +39,4 @@ export {
   BundlingOptions,
   ICommandHooks,
   LogLevel,
-} from "@aws-cdk/aws-lambda-nodejs";
+} from "aws-cdk-lib/aws-lambda-nodejs";
