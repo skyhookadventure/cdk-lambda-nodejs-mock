@@ -39,4 +39,7 @@ export {
   BundlingOptions,
   ICommandHooks,
   LogLevel,
+  OutputFormat,
+  SourceMapMode,
+  Charset,
 } from "aws-cdk-lib/aws-lambda-nodejs";
