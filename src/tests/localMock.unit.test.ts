@@ -24,7 +24,7 @@ it("returns a lambda with default code", () => {
         S3Key: "cdk-lambda-nodejs-mock-fake-lambda.ts",
       },
       Handler: "index.handler",
-      Runtime: "nodejs12.x",
+      Runtime: "nodejs22.x",
     })
   );
 });

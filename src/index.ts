@@ -1,7 +1,7 @@
-import { Function, Runtime, Code } from "aws-cdk-lib/aws-lambda";
-import { Construct } from "constructs";
+import { Code, Function, Runtime } from "aws-cdk-lib/aws-lambda";
 import { NodejsFunctionProps } from "aws-cdk-lib/aws-lambda-nodejs";
 import { Bucket } from "aws-cdk-lib/aws-s3";
+import { Construct } from "constructs";
 
 /**
  * NodejsFunction Mock
@@ -22,7 +22,7 @@ export class NodejsFunction extends Function {
     // Create a Lambda Function without the real code generated using Parcel/Docker
     super(scope, id, {
       // Required values if not set for LambdaFunction
-      runtime: Runtime.NODEJS_12_X,
+      runtime: Runtime.NODEJS_LATEST,
       handler: "index.handler",
       // Use other props
       ...props,
